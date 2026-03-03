@@ -1,0 +1,13 @@
+Pokemon
+------
+- name: String
+- type: String
+- hp: int
+- attack: int
+
++ Pokemon(name, type, hp, attack)
++ getName(): String
++ getType(): String
++ getHp(): int
++ getAttack(): int
++ toString(): String

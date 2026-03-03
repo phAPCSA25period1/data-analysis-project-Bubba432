@@ -66,12 +66,11 @@ UML_Diagram.png (or UML_Diagram.pdf)
 
 ## 🧩 Step 1 — Choose Your Dataset
 
-**Dataset Name:**  
-**Source / Link:**  
+**Dataset Name:** Pokémon Stats (Sample)
+**Source / Link:** Created by student for class project
 
-**What this dataset contains (2–3 sentences):**  
-____________________________________________________________________  
-____________________________________________________________________  
+**What this dataset contains (2–3 sentences):**
+This small CSV contains basic statistics for ten Pokémon, including their name, elemental type, hit points (HP), and attack value.  It is only a sample dataset created to demonstrate array and file input concepts.
 
 ---
 
@@ -80,9 +79,7 @@ ____________________________________________________________________
 Your guiding question should be something you can answer using your dataset.
 
 **My guiding question:**  
-____________________________________________________________________  
-____________________________________________________________________  
-
+Which Pokémon type has the highest average HP value?
 Examples:
 
 - "Which Pokémon has the highest HP?"  
@@ -126,9 +123,10 @@ In `Main.java`, you must:
 
 | Attribute Name | CSV Column Name | Column Index # | Notes |
 |----------------|------------------|----------------|-------|
-|                |                  |                |       |
-|                |                  |                |       |
-|                |                  |                |       |
+| name           | Name             | 0              | Pokémon name string |
+| type           | Type             | 1              | elemental type string |
+| hp             | HP               | 2              | integer hit points |
+| attack         | Attack           | 3              | integer attack value |
 
 ---
 
@@ -145,8 +143,8 @@ You must write **at least two algorithms** to analyze your dataset.
 
 **Algorithms I will implement:**
 
-1. __________________________________________  
-2. __________________________________________  
+1. Find the minimum and maximum HP values (min/max algorithm)
+2. Compute the average HP per type and determine which type has the highest average (grouping and average)
 
 Optional extras:  
 - Sorting  
@@ -165,14 +163,10 @@ After analyzing your objects, print:
 - ✔ A clear answer to your guiding question  
 
 **My findings:**  
-____________________________________________________________________  
-____________________________________________________________________  
-____________________________________________________________________  
+When the CSV is read, 10 rows are loaded.  The minimum HP observed is 35 and the maximum HP is 160.  The overall average HP is computed to be approximately 68.4.  Grouping by type and averaging, the Normal type ended up with the highest average HP due to Snorlax's large value.
 
-**My answer to the guiding question:**  
-____________________________________________________________________  
-____________________________________________________________________  
-
+**My answer to the guiding question:**
+The Pokémon type with the highest average HP in this dataset is **Normal**.
 ---
 
 ## 📝 Step 7 — Documentation Requirements
